@@ -5,12 +5,14 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Nav from './components/Nav';
 import ItemsDetails from './pages/ItemsDetails';
+import ErrorHandling from './pages/ErrorHandling';
 
 function App() {
   const router = createBrowserRouter([
     {
       path: '/',
       element: <Nav />,
+      errorElement: <ErrorHandling />,
       children: [
         { index: true, element: <Home /> },
         { path: 'about', element: <About /> },
