@@ -12,8 +12,8 @@ function App() {
       element: <Nav />,
       children: [
         { index: true, element: <Home /> },
-        { path: '/about', element: <About /> },
-        { path: '/contact', element: <Contact /> },
+        { path: 'about', element: <About /> },
+        { path: 'contact', element: <Contact /> },
       ],
     },
   ]);
